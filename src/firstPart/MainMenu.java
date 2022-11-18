@@ -58,20 +58,20 @@ public class MainMenu {
                 System.out.println("Название вашей компании");
                 String name = in.next();
                 company6.setName(name);
-                System.out.println("введите бюджет");
+                System.out.println("Введите бюджет компании(через запятую, потому что тип Double)");
                 Double holdingBudget = in.nextDouble(); //вводить бюджет через запятую
                 company6.setHoldingBudget(holdingBudget);
-                System.out.println("введите иям директора вашей компании");
+                System.out.println("Введите иям директора вашей компании");
                 String directorOfCompany = in.next();
                 company6.setDirectorOfCompany(directorOfCompany);
 
-                System.out.println("номер вашей компании");
+                System.out.println("Номер вашей компании");
                 Integer number = in.nextInt();
                 company6.setNumber(number);
                 holding.addCompany(company6);
                 holding.listOfCompanies();
             } else if (command == 5) {
-                System.out.println("удаляем компанию " + company2.getName());
+                System.out.println("Удаляем компанию " + company2.getName());
                 holding.dropCompany(company2);
                 holding.listOfCompanies();
             } else if (command == 6){
